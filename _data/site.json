@@ -1,0 +1,55 @@
+{
+  "slug": "sk-frandoor",
+  "nazev": "FranDOOR",
+  "url": "https://webhunter-navrhy.github.io/sk-frandoor/",
+  "base": "/sk-frandoor/",
+  "lang": "sk",
+  "popis": "FranDOOR: interiérové dvere, vstavané skrine a podlahy so zameraním a montážou. Huncovce, Kežmarok, Poprad. V odbore od roku 2002.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "d2.jpg",
+  "logo": "",
+  "theme_color": "#aa0404",
+  "typ": "LocalBusiness",
+  "ico": "44206097",
+  "kontakt": {
+    "email": "info@frandoor.sk",
+    "telefon": "0914 224 851",
+    "adresa": {
+      "ulice": "Hlavná 1/54",
+      "psc": "059 92",
+      "mesto": "Huncovce",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu FranDOOR"
+  },
+  "nav": [
+    {
+      "text": "Dvere",
+      "href": "#dvere"
+    },
+    {
+      "text": "Skrine",
+      "href": "#skrine"
+    },
+    {
+      "text": "Podlahy",
+      "href": "#podlahy"
+    },
+    {
+      "text": "Postup",
+      "href": "#postup"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

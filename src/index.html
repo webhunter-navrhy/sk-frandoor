@@ -1,0 +1,76 @@
+{% extends "_base.html" %}
+{% set titulek = 'FranDOOR – dvere, skrine a podlahy, Kežmarok a Poprad' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-sieť">
+    <div class="hero-text">
+      <p class="stitok">Huncovce · Kežmarok · Poprad</p>
+      <h1>Dvere, skrine a podlahy so&nbsp;zameraním aj montážou</h1>
+      <p class="uvod">V oblasti dverí podnikám od roku 2002. Zameriam, dovediem a namontujem, aby všetko sedelo v&nbsp;mieste, kde bude slúžiť.</p>
+      <p class="tlacidla"><a class="tlacitko" href="#kontakt">Napísať dopyt</a><a class="tlacitko ghost" href="#dvere">Pozrieť realizácie</a></p>
+    </div>
+    <div class="krila" role="group" aria-label="Realizácie interiérových dverí">
+      {% for f,a in [('d2.jpg','Tmavé interiérové dvere so skleneným pásom v chodbe'),('d15.jpg','Svetlé dvere s piatimi sklenenými výrezmi'),('d13.jpg','Čierne dvere s úzkym sklom'),('d21.jpg','Hnedé dvere so štyrmi sklenenými štvorcami'),('d24.jpg','Dvere s presklenými poľami v drevenom ráme')] %}
+      <figure class="krilo" tabindex="0">{{ img(f, a, sizes='(min-width: 60rem) 14rem, 40vw') }}</figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="dvere">
+  <div class="wrap">
+    <div class="hlava"><h2>Interiérové dvere</h2><p>Dvere ERKADO aj podľa Vašej predstavy: otočné, posuvné, s&nbsp;presklením alebo bez. Vyberiete dekor, ja ich zameriam a namontujem.</p></div>
+    <div class="galeria">
+      {% for f,a,c in [('d7.jpg','Posuvné dvojkrídlové dvere na lište','sirka'),('d27.jpg','Tmavé dvere v podkrovnej chodbe',''),('d22.jpg','Dvere v tmavom dekore so skleneným pásom',''),('d6.jpg','Posuvné dvere na lište so zvislým sklom','sirka'),('d26.jpg','Dvere so štyrmi matnými sklenenými poľami',''),('d31.jpg','Dvere s veľkým matným sklom','')] %}
+      <figure class="{{ c }}">{{ img(f, a, sizes='(min-width: 60rem) 24rem, 50vw') }}</figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce tmava" id="skrine">
+  <div class="wrap dvojstlpec">
+    <div class="hlava"><h2>Vstavané skrine</h2><p>Skrine na mieru do izby, chodby či podkrovia. Zvolíte dekor, presklenie a doplnky, napríklad police, tyče na odevy a zásuvky.</p></div>
+    <div class="skrine">
+      {% for f,a in [('d17.jpg','Vstavaná skriňa s posuvnými bielymi a tmavými dvierkami v spálni'),('d16.jpg','Rozostavaná biela vstavaná skriňa s policami'),('d35.jpg','Vstavaná skriňa s policami v drevenom dekore'),('d36.jpg','Posuvná skriňa s oranžovým pásom')] %}
+      <figure>{{ img(f, a, sizes='(min-width: 60rem) 28rem, 50vw') }}</figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="podlahy">
+  <div class="wrap dvojstlpec podlahy">
+    <div class="hlava"><h2>Podlahy</h2><p>Plávajúce podlahy vrátane montáže. Vyberiete dekor, ja ich položím a dokončím okolo dverí a líšt.</p></div>
+    <figure class="podlaha">{{ img('plavajuca.jpg', 'Položená drevená plávajúca podlaha v izbe', sizes='(min-width: 60rem) 40rem, 100vw') }}</figure>
+  </div>
+</section>
+
+<section class="sekce svetla" id="postup">
+  <div class="wrap">
+    <h2>Od merania po montáž</h2>
+    <ol class="postup" role="list">
+      <li><b>Zameranie</b><span>Prídem na miesto a zmeriam otvory.</span></li>
+      <li><b>Poradenstvo</b><span>Poradím s dekorom, typom otvárania a sklom.</span></li>
+      <li><b>Doprava</b><span>Tovar dovediem k Vám.</span></li>
+      <li><b>Montáž</b><span>Namontujem a nastavím.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap dvojstlpec">
+    <div>
+      <h2>Napíšte mi</h2>
+      <p>Pošlite, čo potrebujete: dvere, skrine alebo podlahy, a v ktorej obci. Ozvem sa Vám.</p>
+      <address>
+        Róbert Frankovský<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br>
+        <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a><br>
+        <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a>
+      </address>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

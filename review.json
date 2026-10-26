@@ -1,0 +1,16 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Postup „Od merania po montáž“ (PC buňka 5, mobil buňka 5): tahle výtka zůstala neopravená. Červená linka nad prvním krokem pořád začíná hned pod spodkem h2, na PC zhruba 6 px pod ním a na mobilu asi 8 px. Nadpis tak dál vypadá podtržený. Mezi h2 a řadou kroků dát margin-bottom aspoň 32 px (na mobilu 24 px). Linky kroků (border-top) pak začnou až pod touto mezerou a nadpis jimi nebude podtržený.",
+    "Postup na PC (buňka 5): na mobilu jsou popisy kroků opravené (tmavé, kolem 16 px). Na 1440 px ale působí pořád světleji a drobněji než odstavec v hero nebo u Interiérových dverí. Ověřit, jestli desktopový media query nepřepisuje color nebo font-size u popisů kroků. Na všech šířkách sjednotit #3a3434, 16 px a řádkování 1,5, aby kroky na PC nebyly nejslabší text stránky.",
+    "Kotvy z menu (Dvere, Skrine, Podlahy, Postup, Kontakt), PC buňky 2 a 5: nadpisy h2 „Interiérové dvere“ a „Od merania po montáž“ jsou na snímcích napůl schované pod fixní hlavičkou. Rafael výslovně nechce, aby prvky zajížděly pod fixní menu. Všem sekcím s kotvou dát scroll-margin-top aspoň o 16 px vyšší, než je hlavička (zhruba 90 px na PC, 76 px na mobilu). Po kliknutí v menu pak musí být celý nadpis vidět."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Brand sedí: značka FranDOOR textem vlevo v hlavičce v klientově červené #AA0404, k tomu teplá světlá paleta a jedna tmavá sekce u skříní.",
+    "Úvod jako svislé pásy fotek dveří je nápad z oboru. Všechny fotky jsou skutečné realizace klienta, nic není vymyšlené, z faktů je jen „od roku 2002“ z jeho webu.",
+    "Kontakt na mobilu je po opravě čitelný: úvodní text a adresa jsou tmavé a větší, telefon a e-mail tučné a výrazné, popisky polí čitelné. QA bez přetečení na všech 6 šířkách."
+  ],
+  "verdikt": "Výtky k čitelnosti jsou opravené: kontakt na PC i mobilu a popisy kroků na mobilu. Linky v Postupu ale pořád srůstají s nadpisem h2 a popisy kroků na PC působí pořád světle. Po těchto drobnostech a doplnění scroll-margin-top je web na 8.",
+  "_hash": "7e510fdd7d47128f1d3dfea98f312dcee9c292f5"
+}
